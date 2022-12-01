@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;800 family=Caudex:wght@700&family=Orbitron:wght@700&display=swap");
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background: #252525;
+    margin: 0;
+    font-family: "Catamaran", sans-serif;
+    overflow: hidden;
+}
+
+body,
+html {
+    height: 100vh;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    grid-template-rows: 98px 1fr;
+    height: 100%;
+    gap: 60px;
+}
+
+.content-sidebar {
+    border-right: 1px solid #505050;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-sidebar_button {
+    display: block;
+    width: 100%;
+    height: 98px;
+    background: linear-gradient(127.44deg, #505050 0%, #383838 100%);
+    border: none;
+    position: relative;
+}
+
+.content-sidebar_button::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(Res/Vector.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: calc(50% - 12px);
+    left: calc(50% - 12px);
+}
+
+.content-sidebar_list {
+    list-style: none;
+    margin-bottom: 60px;
+    padding-left: 0;
+}
+
+.content-sidebar_item {
+    margin-top: 63px;
+}
+
+.content-sidebar_link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.content-sidebar_fb {
+    background-image: url(Res/fb.svg);
+}
+
+.content-sidebar_inst {
+    background-image: url(Res/inst.svg);
+}
+
+.content-sidebar_tw {
+    background-image: url(Res/twi.svg);
+}
+
+.content-header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-header_logo {
+    display: block;
+    width: 103px;
+    height: 31px;
+    background-image: url(Res/logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-header_list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+    padding-right: 70px;
+}
+
+.content-header_list:first-child {
+    margin: 0;
+}
+
+.content-header_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    font-family: Catamaran;
+    font-weight: 200;
+}
+
+.content-header_link.wallet {
+    background-image: url(Res/wallet.svg);
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-header_item {
+    margin-left: 107px;
+}
+
+.content-main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: #fff;
+    margin: 0;
+}
+
+.caesar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 203px;
+    display: block;
+    position: relative;
+}
+
+.caesar-list p {
+    margin: 0px;
+}
+
+.caesar-list li {
+    margin-bottom: 45px;
+}
+
+.caesar-list img {
+    margin: -10;
+}
+
+.main {
+    font-weight: 800;
+    font-size: 34px;
+    margin-top: 0px;
+    margin-bottom: -20px;
+}
+
+.first {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+}
+
+.main-gray {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: -10px;
+}
+
+.second {
+    line-height: 140%;
+    color: #fff;
+    opacity: 0.2;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.third {
+    line-height: 140%;
+    color: #fff;
+    opacity: 0.2;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.caesar {
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    height: 905px;
+}
+
+.footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    width: 100%;
+    height: 245px;
+    background: linear-gradient(270deg,
+            rgba(66, 66, 66, 0.49) 0%,
+            rgba(66, 66, 66, 0.4753) 76.04%,
+            rgba(66, 66, 66, 0) 100%);
+    backdrop-filter: blur(23.6458px);
+}
+
+.footer p {
+    font-family: Caudex;
+    font-weight: 400;
+    font-size: 22.7px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    margin-top: 41px;
+    margin-left: 30px;
+    margin-bottom: 37px;
+}
+
+.title {
+    font-family: Orbitron;
+    font-weight: 700;
+    font-size: 17.025px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+
+}
+
+.title li {
+    margin-right: 200px;
+}
+
+.description {
+    font-family: 'Catamaran';
+    font-weight: 500;
+    font-size: 17.025px;
+    line-height: 28px;
+    color: #BCBCBC;
+    letter-spacing: 0.05em;
+}
+
+.description li {
+    margin-right: 200px;
+}
+
+.enzo {
+    margin-left: -26px;
+}
+
+.eth {
+    margin-left: -29px;
+}
+
+.wallett {
+    margin-left: 55px;
+}
+
+.march {
+    margin-left: -42px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 30px;
+
+}
+
+.footer li {
+    display: inline;
+
+}
+
+.purple {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 7%;
+    height: 245px;
+}
+
+.ellipse {
+    margin-top: 26px;
+}
+
+.content-right {
+    text-decoration: none;
+    position: absolute;
+    right: 5.2%;
+    top: 19%;
+    width: 530px;
+    margin: 0;
+    font-family: 'Caudex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65.4px;
+    line-height: 118%;
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.viewbtn {
+    display: block;
+    position: absolute;
+    border: 1px solid #FFFFFF;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 139.5%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    width: 186px;
+    height: 61px;
+    justify-content: center;
+    right: 100px;
+    bottom: -120px;
+}
+
+.buybtn {
+    display: block;
+    position: absolute;
+    background-color: #FFFFFF;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 139.5%;
+    display: flex;
+    align-items: center;
+    color: #252525;
+    width: 186px;
+    height: 61px;
+    justify-content: center;
+    right: 341px;
+    bottom: -119px;
+}
+
+.buybtnblue {
+    display: block;
+    position: absolute;
+    background-color: #5025FB;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 139.5%;
+    display: flex;
+    align-items: center;
+    color: #252525;
+    width: 186px;
+    height: 61px;
+    justify-content: center;
+    right: 335px;
+    bottom: -124px;
+    z-index: -1;
+}
+
+.buybtnred {
+    display: block;
+    position: absolute;
+    background-color: #FB258B;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 139.5%;
+    display: flex;
+    align-items: center;
+    color: #252525;
+    width: 186px;
+    height: 61px;
+    justify-content: center;
+    right: 346px;
+    bottom: -114px;
+    z-index: -1;
+}
+
+.viewbtn img {
+    margin-right: 14px;
+}
+
+.blue-text {
+    position: absolute;
+    right: 64px;
+    top: 3px;
+    margin: 0;
+    font-family: 'Caudex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65.4px;
+    line-height: 118%;
+    z-index: -2;
+
+    letter-spacing: 0.005em;
+
+    color: #5025FB;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.red-text {
+    position: absolute;
+    right: 74px;
+    top: 0px;
+    margin: 0;
+    font-family: 'Caudex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65.4px;
+    line-height: 118%;
+    /* or 54px */
+    z-index: -1;
+
+    letter-spacing: 0.005em;
+
+    color: #FB258B;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.dscrp {
+    margin-top: 30px;
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 00;
+    font-size: 25px;
+    line-height: 139.5%;
+    /* or 28px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.065em;
+
+    color: #BCBCBC;
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url(Fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Catamaran;
+    src: url(Fonts/Catamaran-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Caudex;
+    src: url(Fonts/Caudex-Regular.ttf);
+}
